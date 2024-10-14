@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CalculoNotaMedia&apos; to &apos;CalculoNotaFinal&apos;&#x0D;&#x0A;- Original project: &apos;r01e18&apos;&#x0D;&#x0A;- Original element: &apos;CalculoNotaMedia&apos;&#x0D;&#x0A;- Renamed element: &apos;CalculoNotaFinal&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CalculoNotaMedia&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{CalculoNotaMedia.java[CalculoNotaMedia" matchStrategy="1" name="CalculoNotaFinal" qualified="false" references="true" similarDeclarations="false" stamp="1728029208183" textual="false" version="1.0"/>
+</session>
