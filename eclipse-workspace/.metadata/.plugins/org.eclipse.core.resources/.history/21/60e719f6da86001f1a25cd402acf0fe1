@@ -1,6 +1,0 @@
-
-public class Ejercicio1 {
-
-  Persona persona1 = new Persona ();
-  persona1.edad = 25;
-}

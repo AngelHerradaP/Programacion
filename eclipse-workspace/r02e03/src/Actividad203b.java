@@ -27,12 +27,7 @@ public class Actividad203b {
     Complejo producto = complejo1.multiplicar(complejo2);
     Complejo division = complejo1.dividir(complejo2);
     
-    String resultadoSuma = suma.toString();
-    String resultadoResta = resta.toString();
-    String resultadoProducto = producto.toString();
-    String resultadoDivision = division.toString();
-    
-    System.out.printf(Locale.US, "La suma es: %s.%nLa resta es %s.%nEl producto es %s.%nLa division es %s", resultadoSuma, resultadoResta, resultadoProducto, resultadoDivision);
+    System.out.printf(Locale.US, "La suma es: %s.%nLa resta es %s.%nEl producto es %s.%nLa division es %s", suma, resta, producto, division);
   }
 
 }
