@@ -9,11 +9,11 @@ public class CalculaIMCApp {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("Introduce tu peso (en kg): ");
-    Double peso = Double.parseDouble(sc.nextLine());
+    double peso = Double.parseDouble(sc.nextLine());
     System.out.println("Introduce tu altura (en metros): ");
-    Double altura = Double.parseDouble(sc.nextLine());
+    double altura = Double.parseDouble(sc.nextLine());
     
-    Double imc = peso / (altura*altura);
+    double imc = peso / (altura*altura);
     String resultadoIMC = "Pon un numero valido";
     
     if (imc < 16) {
