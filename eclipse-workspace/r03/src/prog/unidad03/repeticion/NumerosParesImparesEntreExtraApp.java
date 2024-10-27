@@ -1,16 +1,20 @@
 package prog.unidad03.repeticion;
 import java.util.Scanner;
 
-public class NumerosParesImparesEntreApp {
-
+public class NumerosParesImparesEntreExtraApp {
   public static void main(String[] args) { 
     
     Scanner sc = new Scanner(System.in);
     
+    int numeroComienzoIntervalo = 0;
+    int numeroFinalIntervalo = 1;
+    
+    do {
+    
       System.out.println("Introduce el numero de comienzo del intervalo: ");
-      int numeroComienzoIntervalo = Integer.parseInt(sc.nextLine());
+      numeroComienzoIntervalo = Integer.parseInt(sc.nextLine());
       System.out.println("Introduce el numero de fin de intervalo: ");
-      int numeroFinalIntervalo = Integer.parseInt(sc.nextLine());
+      numeroFinalIntervalo = Integer.parseInt(sc.nextLine());
       
       if (numeroComienzoIntervalo <= numeroFinalIntervalo) {
         
@@ -30,8 +34,11 @@ public class NumerosParesImparesEntreApp {
         
       }else {
         
-        System.out.println("El valor introducido no es correcto. Terminando el programa.");
+        System.out.println("El valor introducido no es correcto. Intentalo de nuevo.");
         
-    }  
+      }
+    
+    } while (numeroComienzoIntervalo > numeroFinalIntervalo);
+      
   }
 }
