@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="paquete2.Fraccion"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="prog.unidad03.repeticion.NumerosParesImparesEntreApp"/>
+    <fullyQualifiedTypeName name="java.lang.VerifyError"/>
 </qualifiedTypeNameHistroy>
