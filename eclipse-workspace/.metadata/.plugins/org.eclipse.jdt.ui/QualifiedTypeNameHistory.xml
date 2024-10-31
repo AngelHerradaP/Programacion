@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="prog.unidad03.repeticion.NumerosParesImparesEntreApp"/>
     <fullyQualifiedTypeName name="java.lang.VerifyError"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.stream.DoubleStream"/>
 </qualifiedTypeNameHistroy>
