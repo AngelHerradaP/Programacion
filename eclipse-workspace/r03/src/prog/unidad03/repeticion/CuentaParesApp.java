@@ -10,7 +10,7 @@ public class CuentaParesApp {
     
       int cantidadPar = 0;
     
-      System.out.print("¿Cuantos numeros pares deseas introducir?:  ");
+      System.out.print("¿Cuantos numeros pares deseas introducir?: ");
       int numerosIntroducidos = Integer.parseInt(sc.nextLine());
         if (numerosIntroducidos > 0) {
           
