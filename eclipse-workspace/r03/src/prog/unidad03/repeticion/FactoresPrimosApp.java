@@ -26,15 +26,11 @@ public class FactoresPrimosApp {
           }
         }
 
-        if (numeroComprobacionPrimo == 2) {
-
-
-          if (numeroIntroducido % contador1 == 0) {
+        if (numeroComprobacionPrimo == 2 && numeroIntroducido % contador1 == 0) {
               
             System.out.printf("%d es un factor primo%n", contador1); 
             numeroIntroducido = numeroIntroducido / contador1;
             
-          }
         }
         
         numeroComprobacionPrimo = 0;
