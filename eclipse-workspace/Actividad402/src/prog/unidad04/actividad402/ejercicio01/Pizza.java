@@ -2,13 +2,13 @@ package prog.unidad04.actividad402.ejercicio01;
 
 public class Pizza {
   
-  private static final String PEDIDA = "pedida";
-  private static final String SERVIDA = "servida";
-  private static final String MEDIANA = "mediana";
-  private static final String FAMILIAR = "familiar";
-  private static final String MARGARITA = "margarita";
-  private static final String CUATRO_QUESOS = "cuatro quesos";
-  private static final String FUNGHI = "funghi";
+  private static final String ESTADO_PEDIDA = "pedida";
+  private static final String ESTADO_SERVIDA = "servida";
+  private static final String TAMANYO_MEDIANA = "mediana";
+  private static final String TAMANYO_FAMILIAR = "familiar";
+  private static final String TIPO_MARGARITA = "margarita";
+  private static final String TIPO_CUATRO_QUESOS = "cuatro quesos";
+  private static final String TIPO_FUNGHI = "funghi";
   
   private String tamanio;
   private String tipo;
@@ -18,28 +18,28 @@ public class Pizza {
   
   public Pizza(String tamanio, String tipo) {
     
-    if (tamanio.equalsIgnoreCase(MEDIANA) || tamanio.equalsIgnoreCase(FAMILIAR) && tipo.equalsIgnoreCase(MARGARITA) || tipo.equalsIgnoreCase(CUATRO_QUESOS) || tipo.equalsIgnoreCase(FUNGHI)) {
+    if (tamanio.equalsIgnoreCase(TAMANYO_MEDIANA) || tamanio.equalsIgnoreCase(TAMANYO_FAMILIAR) && tipo.equalsIgnoreCase(TIPO_MARGARITA) || tipo.equalsIgnoreCase(TIPO_CUATRO_QUESOS) || tipo.equalsIgnoreCase(TIPO_FUNGHI)) {
       
       pizzasCreadas++;
       this.tamanio = tamanio;
       this.tipo = tipo;
-      this.estado = PEDIDA;
+      this.estado = ESTADO_PEDIDA;
       
-    }else if (tamanio.equalsIgnoreCase(MEDIANA) || tamanio.equalsIgnoreCase(FAMILIAR)) {
+    }else if (tamanio.equalsIgnoreCase(TAMANYO_MEDIANA) || tamanio.equalsIgnoreCase(TAMANYO_FAMILIAR)) {
       
-      System.out.printf("El parametro tipo no es correcto. Debe ser uno de %s, %s o %s%n", MARGARITA, CUATRO_QUESOS, FUNGHI);
+      System.out.printf("El parametro tipo no es correcto. Debe ser uno de %s, %s o %s%n", TIPO_MARGARITA, TIPO_CUATRO_QUESOS, TIPO_FUNGHI);
     
     }else
      
-      System.out.printf("El parametro tamanio no es correcto. Debe ser uno de %s o %s%n", MEDIANA, FAMILIAR);
+      System.out.printf("El parametro tamanio no es correcto. Debe ser uno de %s o %s%n", TAMANYO_MEDIANA, TAMANYO_FAMILIAR);
   
   }
   
-  public void servir() {
+  public void sirve() {
    
-    if (estado == PEDIDA) {
+    if (estado == ESTADO_PEDIDA) {
       
-      estado = SERVIDA;
+      estado = ESTADO_SERVIDA;
       pizzasServidas++;
       
     }else {
@@ -55,7 +55,7 @@ public class Pizza {
     
   }
   
-  public String getTamanio() {
+  public String getTamanyo() {
     
     return tamanio;
     
@@ -81,7 +81,7 @@ public class Pizza {
   
   public String toString() {
     
-    return "Tamaño: " + getTamanio() + "Tipo: " + getTipo() + "Estado: " + getEstado();
+    return "Tamaño: " + getTamanyo() + "Tipo: " + getTipo() + "Estado: " + getEstado();
     
   }
-}
+} 
