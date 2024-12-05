@@ -12,7 +12,6 @@ public class SuperEstadisticaApp {
     int numeroComprobacionError = 0;
     int numeroEntero = 1;
     int contador = 0;
-    int numeroEnteroCopia = numeroEntero;
     double sumaNumeroEntero = 0;
     double mediaNumeroEntero =  0;
     
@@ -32,8 +31,6 @@ public class SuperEstadisticaApp {
           
           //Compruebo si el numero que se ha introducido es 0 para no calcular si es positivo, negativo, par o impar.
           if (numeroEntero != 0) {
-            
-            numeroEnteroCopia = numeroEntero;
             
             //Compruebo si el numero es par y lo imprimo por pantalla.
             if (numeroEntero % 2 == 0) {
@@ -62,8 +59,8 @@ public class SuperEstadisticaApp {
           //Compruebo si el numero no entra dentro del rango solicitado y si es impar (-11 a 20 exceptuando -1 y 3).
           if (numeroEntero == -1 || numeroEntero == 3 || comprobacionImpar == true && numeroEntero <= -11 || numeroEntero > 20) {
             
-            System.out.printf("El numero %d entra en el calculo%n", numeroEnteroCopia);
-            sumaNumeroEntero = numeroEnteroCopia + sumaNumeroEntero;
+            System.out.printf("El numero %d entra en el calculo%n", numeroEntero);
+            sumaNumeroEntero = numeroEntero + sumaNumeroEntero;
             contador++;
             mediaNumeroEntero = sumaNumeroEntero / contador;
             
